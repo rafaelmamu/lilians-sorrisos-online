@@ -1,7 +1,7 @@
 
 import React from 'react';
 import ServiceCard from './ServiceCard';
-import { Smile, Shield, Heart, Calendar, Award, Magic } from 'lucide-react';
+import { Smile, Shield, Heart, Calendar, Award, Wand2 } from 'lucide-react';
 
 const Services = () => {
   const services = [
@@ -20,7 +20,7 @@ const Services = () => {
     {
       title: "Tratamentos Restauradores",
       description: "Restaurações estéticas e funcionais adaptadas especialmente para dentes de leite e permanentes jovens.",
-      icon: <Magic className="w-8 h-8 text-white" />,
+      icon: <Wand2 className="w-8 h-8 text-white" />,
       color: "bg-dental-mint"
     },
     {
