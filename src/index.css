@@ -6,78 +6,16 @@
 @tailwind utilities;
 
 @layer base {
-  :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
-
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
-
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
-
-    --primary: 210 100% 68%;
-    --primary-foreground: 210 40% 98%;
-
-    --secondary: 60 100% 60%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
-
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
-
-    --radius: 1rem;
-
-    --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 240 5.9% 10%;
-    --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 240 4.8% 95.9%;
-    --sidebar-accent-foreground: 240 5.9% 10%;
-    --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
-  }
-
-  html {
-    scroll-behavior: smooth;
-  }
-
   body {
-    @apply bg-background text-foreground font-sans;
-  }
-
-  h1, h2, h3, h4, h5, h6 {
-    @apply font-display;
+    @apply bg-gradient-to-br from-dental-light via-blue-50 to-dental-mint/20;
   }
 }
 
 @layer components {
-  .btn-primary {
-    @apply bg-dental-blue text-white font-bold py-3 px-6 rounded-full transition-all hover:shadow-lg hover:bg-blue-500;
-  }
-  
-  .btn-secondary {
-    @apply bg-dental-yellow text-gray-800 font-bold py-3 px-6 rounded-full transition-all hover:shadow-lg hover:bg-yellow-400;
-  }
-  
-  .container-section {
-    @apply container mx-auto px-4 py-16 md:py-24;
-  }
-  
-  .section-title {
-    @apply text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800;
-  }
-  
-  .card-shadow {
-    @apply shadow-lg hover:shadow-xl transition-shadow duration-300;
+  .playful-bg-pattern {
+    background-image: 
+      radial-gradient(circle at 10% 20%, rgba(253, 239, 132, 0.1) 0%, transparent 70%),
+      radial-gradient(circle at 90% 80%, rgba(254, 192, 203, 0.1) 0%, transparent 70%),
+      radial-gradient(circle at 30% 90%, rgba(144, 238, 144, 0.1) 0%, transparent 60%);
   }
 }
