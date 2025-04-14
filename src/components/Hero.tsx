@@ -27,17 +27,13 @@ const Hero = () => {
             </div>
           </div>
           <div className="md:w-1/2 relative">
-            <div className="relative z-10 animate-float rounded-3xl overflow-hidden shadow-2xl">
+            <div className="rounded-3xl overflow-hidden shadow-2xl">
               <img 
                 src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" 
                 alt="Criança sorrindo no dentista" 
                 className="w-full h-auto rounded-3xl"
               />
             </div>
-            
-            {/* Decorative Elements */}
-            <div className="absolute top-[-30px] right-[-20px] w-24 h-24 bg-dental-yellow rounded-full opacity-70 z-0"></div>
-            <div className="absolute bottom-[-20px] left-[-30px] w-32 h-32 bg-dental-mint rounded-full opacity-60 z-0"></div>
           </div>
         </div>
       </div>
@@ -53,3 +49,4 @@ const Hero = () => {
 };
 
 export default Hero;
+
