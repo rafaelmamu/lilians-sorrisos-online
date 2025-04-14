@@ -1,13 +1,10 @@
-
 import React from 'react';
 import { MapPin, Phone, Clock, Instagram, Facebook, Youtube } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
-
 const Contact = () => {
-  return (
-    <section id="contact" className="bg-dental-light py-16 md:py-24">
+  return <section id="contact" className="bg-dental-light py-16 md:py-24">
       <div className="container mx-auto px-4">
         <h2 className="section-title">Entre em <span className="text-dental-blue">Contato</span></h2>
         <div className="flex flex-col lg:flex-row gap-12 mt-12">
@@ -19,46 +16,27 @@ const Contact = () => {
                   <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
                     Nome Completo
                   </label>
-                  <Input 
-                    id="name" 
-                    type="text" 
-                    placeholder="Seu nome"
-                    className="w-full rounded-lg"
-                  />
+                  <Input id="name" type="text" placeholder="Seu nome" className="w-full rounded-lg" />
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
                     <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
                       E-mail
                     </label>
-                    <Input 
-                      id="email" 
-                      type="email" 
-                      placeholder="Seu email"
-                      className="w-full rounded-lg"
-                    />
+                    <Input id="email" type="email" placeholder="Seu email" className="w-full rounded-lg" />
                   </div>
                   <div>
                     <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">
                       Telefone
                     </label>
-                    <Input 
-                      id="phone" 
-                      type="tel" 
-                      placeholder="Seu telefone"
-                      className="w-full rounded-lg"
-                    />
+                    <Input id="phone" type="tel" placeholder="Seu telefone" className="w-full rounded-lg" />
                   </div>
                 </div>
                 <div>
                   <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
                     Mensagem
                   </label>
-                  <Textarea 
-                    id="message" 
-                    placeholder="Como podemos ajudar?"
-                    className="w-full rounded-lg min-h-[120px]"
-                  />
+                  <Textarea id="message" placeholder="Como podemos ajudar?" className="w-full rounded-lg min-h-[120px]" />
                 </div>
                 <Button className="btn-primary w-full">
                   Enviar Mensagem
@@ -84,7 +62,7 @@ const Contact = () => {
                   <Phone className="text-dental-blue flex-shrink-0 mt-1" size={24} />
                   <div>
                     <h4 className="font-bold text-gray-800">Telefone</h4>
-                    <p className="text-gray-600">(11) 3456-7890</p>
+                    <p className="text-gray-600">(12) 99136-9967</p>
                     <p className="text-gray-600">WhatsApp: (11) 98765-4321</p>
                   </div>
                 </div>
@@ -117,8 +95,6 @@ const Contact = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Contact;
