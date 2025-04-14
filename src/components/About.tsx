@@ -1,28 +1,14 @@
-
 import React from 'react';
 import { CheckCircle2 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-
 const About = () => {
-  const qualifications = [
-    "Especialista em Odontopediatria",
-    "CRO 76397",
-    "Formação em manejo de pacientes especiais",
-    "Membro da Associação Brasileira de Odontopediatria",
-    "Técnicas modernas e minimamente invasivas"
-  ];
-
-  return (
-    <section id="about" className="bg-dental-light py-16 md:py-24">
+  const qualifications = ["Especialista em Odontopediatria", "CRO 76397", "Formação em manejo de pacientes especiais", "Membro da Associação Brasileira de Odontopediatria", "Técnicas modernas e minimamente invasivas"];
+  return <section id="about" className="bg-dental-light py-16 md:py-24">
       <div className="container mx-auto px-4">
         <div className="flex flex-col lg:flex-row items-center gap-12">
           <div className="lg:w-1/2 relative">
             <div className="relative z-10">
-              <img 
-                src="https://images.unsplash.com/photo-1607962837359-5e7e89f86776?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" 
-                alt="Dra. Lilian Castello" 
-                className="rounded-2xl shadow-2xl w-full h-auto object-cover"
-              />
+              <img alt="Dra. Lilian Castello" className="rounded-2xl shadow-2xl w-full h-auto object-cover" src="/lovable-uploads/295dcf7b-9aa5-46da-a5ee-8f8b8db7fc10.png" />
             </div>
             {/* Decorative Elements */}
             <div className="absolute top-[-30px] right-[-20px] w-40 h-40 bg-dental-yellow rounded-full opacity-30 z-0"></div>
@@ -43,12 +29,10 @@ const About = () => {
             <div className="mb-8">
               <h3 className="text-xl font-bold mb-4 text-gray-800">Qualificações</h3>
               <ul className="space-y-3">
-                {qualifications.map((item, index) => (
-                  <li key={index} className="flex items-center gap-3">
+                {qualifications.map((item, index) => <li key={index} className="flex items-center gap-3">
                     <CheckCircle2 className="text-dental-blue flex-shrink-0" size={20} />
                     <span className="text-gray-700">{item}</span>
-                  </li>
-                ))}
+                  </li>)}
               </ul>
             </div>
             
@@ -58,8 +42,6 @@ const About = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default About;
