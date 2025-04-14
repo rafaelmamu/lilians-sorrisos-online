@@ -75,8 +75,8 @@ const Contact = () => {
                   <MapPin className="text-dental-blue flex-shrink-0 mt-1" size={24} />
                   <div>
                     <h4 className="font-bold text-gray-800">Endereço</h4>
-                    <p className="text-gray-600">Avenida Paulista, 1000, Bela Vista</p>
-                    <p className="text-gray-600">São Paulo - SP, 01310-100</p>
+                    <p className="text-gray-600">Ed Helbor Offices - Av. São João, 2375 - Jd Aquarius</p>
+                    <p className="text-gray-600">São José dos Campos - SP, 12242-000</p>
                   </div>
                 </div>
                 
