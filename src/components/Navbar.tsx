@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Phone } from 'lucide-react';
 import { Button } from "@/components/ui/button";
@@ -24,7 +23,7 @@ const Navbar = () => {
     <nav className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-md py-2' : 'bg-transparent py-4'}`}>
       <div className="container mx-auto px-4 flex justify-between items-center">
         <a href="#" className="flex items-center">
-          <span className="text-2xl font-display font-bold text-dental-blue">Lilian<span className="text-dental-coral">Sorrisos</span></span>
+          <span className="text-2xl font-display font-bold text-dental-blue">Lilian <span className="text-dental-coral">Castello</span></span>
         </a>
 
         {/* Desktop Menu */}

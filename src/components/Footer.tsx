@@ -15,7 +15,7 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center mb-8">
           <div className="mb-6 md:mb-0">
-            <span className="text-2xl font-display font-bold text-dental-blue">Lilian<span className="text-dental-coral">Sorrisos</span></span>
+            <span className="text-2xl font-display font-bold text-dental-blue">Lilian <span className="text-dental-coral">Castello</span></span>
             <p className="mt-2 text-gray-400">Odontopediatria especializada</p>
           </div>
           <button
@@ -52,3 +52,4 @@ const Footer = () => {
 };
 
 export default Footer;
+
